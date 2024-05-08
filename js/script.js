@@ -56,7 +56,7 @@ const searchWord = async () => {
           // Checking if 'audio' property exists before accessing it
           if (word.phonetics[0]?.audio) {
             const audioElement = document.createElement("audio");
-            audioElement.setAttribute("src", word.phonetics[2].audio);
+            audioElement.setAttribute("src", word.phonetics[0].audio);
             wordDiv.appendChild(audioElement);
             audioElement.controls = true;
             audioElement.autoplay = true;

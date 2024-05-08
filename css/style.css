@@ -132,7 +132,19 @@
     height: 100%;
     z-index: 1000;
 
+    transition: all 0.3s ease;
 
+    .background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 10rem;
+      height: 10rem;
+      background-color: #f6f6f6;
+      backdrop-filter: blur(.3125rem);
+      border-radius: .25rem;
+    }
   }
 
   .loader {

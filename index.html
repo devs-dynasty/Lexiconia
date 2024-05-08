@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexiconia</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="loading-screen">
+      <span class="loader"></span>
+    </div>
+    <header>
+      <h1>Lexiconia</h1>
+    </header>
+    <main>
+      <section class="search-bar">
+        <form action="">
+          <div class="search">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search for a word" id="word-to-search"/>
+          </div>
+          
+          <button type="button" id="search-btn">Search</button>
+        </form>
+      </section>
+
+      <section class="result-container" id="result">
+        <h2>Results:</h2>
+      </section>
+    </main>
+  </body>
+</html>

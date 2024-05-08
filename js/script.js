@@ -1,13 +1,16 @@
 let wordSearch = document.querySelector("#word-to-search");
 const searchBtn = document.querySelector("#search-btn"),
   result = document.querySelector("#result"),
-  history = document.querySelector("#word-history");
+  history = document.querySelector("#word-history"),
+  menuBtn = document.querySelector('.menu');
 
 // Search for a word
 
 const searchWord = async () => {
   let words = wordSearch.value.trim();
   let wordHistoryArr = [];
+
+  result.textContent = ''
 
   const loadingDiv = document.querySelector(".loading-screen");
   loadingDiv.style.display = "flex";
@@ -76,8 +79,17 @@ const searchWord = async () => {
     console.error(error);
   }
   wordSearch.value = "";
-
 };
+
+
+// Display menu 
+
+menuBtn.addEventListener('click', () => {
+  const menu = document.querySelector('nav');
+  menu.classList.toggle('show-menu');
+})
+
+
 
 searchBtn.addEventListener("click", searchWord);
 

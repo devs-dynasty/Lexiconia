@@ -50,7 +50,7 @@ const searchWord = async () => {
         word.meanings.forEach((meaning) => {
           meaning.definitions.forEach((definition) => {
             const spanDefinition = document.createElement("p");
-            spanDefinition.textContent = `<strong>Definition:</strong> ${definition.definition}`; // Access the definition property
+            spanDefinition.textContent = `Definition: ${definition.definition}`; // Access the definition property
             definitionsDiv.appendChild(spanDefinition);
           });
 
